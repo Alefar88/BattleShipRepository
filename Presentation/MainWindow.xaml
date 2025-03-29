@@ -1,0 +1,78 @@
+﻿<Window
+    x:Class="Presentation.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Presentation"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <!--<Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button
+                Width="200"
+                Margin="10"
+                Click="InitGame_Click"
+                Content="Init Battleship" />
+            <TextBox
+                Name="CoordinatesTextBox"
+                Width="200"
+                Margin="10" />
+    -->
+    <!--  PlaceholderText="Enter coordinates (e.g., 3,4)" />  -->
+    <!--
+            <Button
+                Width="200"
+                Margin="10"
+                Click="FireMissile_Click"
+                Content="Fire" />
+            <TextBlock
+                Name="ResultTextBlock"
+                Margin="10"
+                FontWeight="Bold"
+                Text="Init the board" />
+        </StackPanel>
+    </Grid>-->
+    <Grid Background="#D0E7F9">
+        <StackPanel Margin="10">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="16"
+                FontWeight="Bold"
+                Text="Battleship!!" />
+            <StackPanel Margin="10,10,0,0" Orientation="Horizontal">
+                <Button
+                    Name="InitButton"
+                    Width="100"
+                    Click="InitGame_Click"
+                    Content="Init Battle" />
+                <TextBlock
+                    Name="ResultTextBlock"
+                    Margin="10"
+                    FontWeight="Bold"
+                    Text="Init the board" />
+            </StackPanel>
+            <Separator Margin="0,10" />
+            <TextBlock Text="Coordinates:" />
+            <StackPanel Orientation="Horizontal">
+                <TextBox
+                    Name="CoordinatesTextBox"
+                    Width="100"
+                    Margin="0,0,10,0" />
+                <Button
+                    Name="FireButton"
+                    Width="50"
+                    Click="FireMissile_Click"
+                    Content="Fire!"
+                    IsEnabled="False" />
+            </StackPanel>
+            <Separator Margin="10,10,0,0" />
+            <TextBlock
+                Name="FireResponseResult"
+                Margin="0,5,0,0"
+                Text="" />
+        </StackPanel>
+    </Grid>
+</Window>
